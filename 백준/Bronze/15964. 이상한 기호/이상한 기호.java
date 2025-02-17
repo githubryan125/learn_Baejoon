@@ -1,11 +1,13 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class Main{
-    public static void main(String[] args){
+public class Main {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int answer = (a+b)*(a-b);
-        System.out.print(answer);
+        long A = sc.nextInt();
+        long B = sc.nextInt();
+        sc.close(); 
+
+        long result = (A + B) * (A - B);
+        System.out.println(result);
     }
 }
